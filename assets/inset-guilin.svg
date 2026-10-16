@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440" role="img" aria-labelledby="tguilin"><title id="tguilin">A　桂林市區（10/22）放大圖</title>
+<defs><radialGradient id="lg" cx=".4" cy=".35" r=".9"><stop offset="0" stop-color="#f4f6e2"/><stop offset="1" stop-color="#e2e6c4"/></radialGradient></defs>
+<rect width="600" height="440" fill="url(#lg)"/>
+<path d="M405.7 73.6 L405.7 175.6 L429.1 264.0 L405.7 332.0 L370.4 413.6" fill="none" stroke="#e9f6fb" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/><path d="M405.7 73.6 L405.7 175.6 L429.1 264.0 L405.7 332.0 L370.4 413.6" fill="none" stroke="#5aa5c8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M53.5 359.2 L229.6 332.0 L393.9 304.8" fill="none" stroke="#e9f6fb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M53.5 359.2 L229.6 332.0 L393.9 304.8" fill="none" stroke="#5aa5c8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="265" cy="250" rx="40" ry="16" fill="#8fc6dd" stroke="#e9f6fb" stroke-width="3"/>
+<text x="253" y="254" transform="rotate(0 253 254)" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="13" font-style="italic" fill="#1f5f80" stroke="#f4f6e2" stroke-width="3" paint-order="stroke">杉湖</text>
+<text x="447" y="121" transform="rotate(80 447 121)" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="16" font-style="italic" fill="#1f5f80" stroke="#f4f6e2" stroke-width="3" paint-order="stroke">漓江</text>
+<path d="M323.5 73.6 L323.5 243.6" fill="none" stroke="#c9a46a" stroke-width="4" stroke-linecap="round"/>
+<path d="M53.5 162.0 L523.0 162.0" fill="none" stroke="#c9a46a" stroke-width="4" stroke-linecap="round"/>
+<path d="M405.7 73.6 L405.7 345.6" fill="none" stroke="#d9c08f" stroke-width="3" stroke-linecap="round"/>
+<text x="306" y="101" transform="rotate(90 306 101)" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="12" font-style="italic" fill="#7a5a30" stroke="#f4f6e2" stroke-width="3" paint-order="stroke">中山中路</text>
+<text x="89" y="152" transform="rotate(0 89 152)" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="12" font-style="italic" fill="#7a5a30" stroke="#f4f6e2" stroke-width="3" paint-order="stroke">解放東路</text>
+<text x="388" y="80" transform="rotate(90 388 80)" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="12" font-style="italic" fill="#7a5a30" stroke="#f4f6e2" stroke-width="3" paint-order="stroke">濱江路</text>
+<path d="M100.1 100.8 C100.1 83.2 107.3 78.8 112.2 78.8 C117.0 78.8 124.3 83.2 124.3 100.8Z" fill="#6fa363" stroke="#3f6b3e" stroke-width=".8" opacity=".75"/>
+<path d="M147.0 121.2 C147.0 103.6 154.3 99.2 159.1 99.2 C164.0 99.2 171.2 103.6 171.2 121.2Z" fill="#6fa363" stroke="#3f6b3e" stroke-width=".8" opacity=".75"/>
+<path d="M534.4 100.8 C534.4 83.2 541.7 78.8 546.5 78.8 C551.4 78.8 558.6 83.2 558.6 100.8Z" fill="#6fa363" stroke="#3f6b3e" stroke-width=".8" opacity=".75"/>
+<path d="M499.2 372.8 C499.2 355.2 506.5 350.8 511.3 350.8 C516.1 350.8 523.4 355.2 523.4 372.8Z" fill="#6fa363" stroke="#3f6b3e" stroke-width=".8" opacity=".75"/>
+<path d="M64.9 332.0 C64.9 314.4 72.1 310.0 77.0 310.0 C81.8 310.0 89.1 314.4 89.1 332.0Z" fill="#6fa363" stroke="#3f6b3e" stroke-width=".8" opacity=".75"/>
+<rect x="0" y="0" width="600" height="38" fill="#3b2f25"/><text x="16" y="26" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="19" font-weight="700" fill="#fff">A　桂林市區（10/22）</text>
+<g transform="translate(570 70)"><circle r="16" fill="#fff8ec" stroke="#3b2f25"/><path d="M0 -12 L5 2 L0 -1 L-5 2Z" fill="#c62828"/><text y="-19" text-anchor="middle" font-family="Georgia,serif" font-size="12" font-weight="700" fill="#2a211a">N</text></g>
+<circle cx="388.0" cy="296.6" r="16" fill="#c62828" stroke="#fff" stroke-width="2.5"/><text x="388.0" y="302.6" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#fff">1</text>
+<circle cx="264.1" cy="240.0" r="16" fill="#c62828" stroke="#fff" stroke-width="2.5"/><text x="264.1" y="246.0" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#fff">2</text>
+<circle cx="343.3" cy="194.2" r="22" fill="none" stroke="#c62828" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="343.3" cy="194.2" r="16" fill="#c62828" stroke="#fff" stroke-width="2.5"/><text x="343.3" y="200.2" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#fff">3</text>
+<circle cx="368.7" cy="165.6" r="22" fill="none" stroke="#c62828" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="368.7" cy="165.6" r="16" fill="#c62828" stroke="#fff" stroke-width="2.5"/><text x="368.7" y="171.6" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#fff">4</text>
+<circle cx="411.5" cy="247.0" r="22" fill="none" stroke="#c62828" stroke-width="2" stroke-dasharray="4 3"/>
+<circle cx="411.5" cy="247.0" r="16" fill="#c62828" stroke="#fff" stroke-width="2.5"/><text x="411.5" y="253.0" text-anchor="middle" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#fff">5</text>
+<text x="588" y="428" text-anchor="end" font-family="PingFang HK,Noto Sans CJK TC,Microsoft JhengHei,sans-serif" font-size="13" fill="#2a211a" stroke="#fffaf0" stroke-width="3" paint-order="stroke">虛線圈＝大約位置；唔按比例</text>
+</svg>
