@@ -7,13 +7,13 @@ img{max-width:100%;height:auto;display:block}
 h1,h2,h3{font-family:var(--serif);letter-spacing:.05em;font-weight:600;line-height:1.3}
 .num,time{font-family:var(--num);font-variant-numeric:tabular-nums}
 .hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;color:#fff}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .hero .inner{position:relative;padding:0 6vw 7vh;background:linear-gradient(transparent,rgba(10,40,55,.85) 45%)}
 .coord{font-family:var(--num);letter-spacing:.2em;font-size:.85rem;margin:0 0 .5rem}
 .hero h1{font-size:clamp(2.6rem,9vw,6.5rem);margin:.2em 0;font-weight:700}
 .hero h1 span{display:block;font-size:.38em;color:#FFE29A;letter-spacing:.3em}
 .hero .lede{max-width:32em;font-size:1.1rem}
-.hero>img.stamp{position:absolute;inset:auto;top:4vh;right:5vw;width:120px;height:auto;transform:rotate(-12deg)}
+.hero img.stamp{position:absolute;inset:auto;top:4vh;right:5vw;width:120px;height:auto;transform:rotate(-12deg)}
 .route-line{height:70px;margin:0 auto;width:4px;border-left:4px dashed var(--terra)}
 section{padding:3rem 6vw}
 .intro{display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem;align-items:start}
@@ -48,7 +48,7 @@ figure{margin:0}figcaption{font-size:.85rem;color:var(--stone);margin-top:.4rem}
 .practical th{background:#E8CFA6;text-align:left}.practical th,.practical td{padding:.5rem .6rem;border-bottom:1px solid #B9A88F;vertical-align:top}
 footer{padding:2rem 6vw;font-size:.85rem;color:var(--stone);border-top:1px solid #B9A88F}
 @media (max-width:760px){body{font-size:16px}.intro,.chapter-head{display:block}.intro aside{margin-top:1.5rem}.chapter-head figure{margin-top:1rem}
-.day{grid-template-columns:1fr;gap:.4rem}.day .date{font-size:2.4rem}.day .date small{display:inline;margin-left:.5rem}.hero>img.stamp{width:84px}.hero{min-height:85vh}
+.day{grid-template-columns:1fr;gap:.4rem}.day .date{font-size:2.4rem}.day .date small{display:inline;margin-left:.5rem}.hero img.stamp{width:84px}.hero{min-height:85vh}
 .practical table,.practical tbody,.practical tr,.practical td,.practical th{display:block}.practical thead{display:none}.practical tr{border-bottom:2px solid #B9A88F;padding:.4rem 0}.practical td{border:0;padding:.1rem 0}}
 @media print{@page{size:A5;margin:12mm}body{background:#fff;font-size:10.5pt;line-height:1.6}.hero{min-height:0;color:var(--ink)}.hero>img,.stamp,.route-line,.chapter-head figure,.banner{display:none}
 .hero .inner{background:none;padding:0}.hero h1 span{color:var(--terra)}section{padding:1rem 0}.chapter.gz{background:none}.day{break-inside:avoid}.alert{box-shadow:none}a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt}}
@@ -90,7 +90,7 @@ footer{padding:2rem 6vw;font-size:.85rem;color:var(--stone);border-top:1px solid
 .hotels ul{list-style:none;margin:0;padding:0}
 .hotels li{display:grid;grid-template-columns:1.6rem 4.6rem 1fr;align-items:center;min-height:44px;border-bottom:1px solid #D8C9AE;font-size:.95rem}
 .hotels b{font-family:var(--num)}
-.bed{display:inline-block;width:20px;height:14px;vertical-align:-2px;background:no-repeat center/contain url("bed.svg")}
+.bed{display:inline-block;width:20px;height:14px;vertical-align:-2px;background:no-repeat center/contain url("bed-v7.png?v=7")}
 .legend .sym .bed{margin:0 .3em}
 @media (max-width:760px){.hotels h3{margin-top:1.5rem}}
 .routemap figure{grid-row:2/4;margin:0}.routemap .legend{align-self:start}
@@ -118,3 +118,13 @@ footer{padding:2rem 6vw;font-size:.85rem;color:var(--stone);border-top:1px solid
 @media (max-width:760px){.dayhead::after{background:linear-gradient(0deg,rgba(14,20,28,.9) 0%,rgba(14,20,28,.75) 60%,rgba(14,20,28,.25) 100%)}}
 .hero .inner{background:linear-gradient(rgba(10,40,55,.6),rgba(10,40,55,.86) 25%,rgba(10,40,55,.9));padding-top:2rem}
 .hero .coord{text-shadow:0 1px 3px rgba(0,0,0,.6)}
+/* v7 anti force-dark */
+picture{display:contents}
+html,body{background:#FFF8EC;color:#2E241C}
+.map-scroll,.inset,.inset figcaption,.legend,.hotels,.routemap,.insets,.practical,.intro,footer{background-color:#FFF8EC}
+.inset,.inset figcaption{background-color:#FFFAF0}
+.chapter.gz{background-color:#FDEBF1}
+.map-scroll{background-color:#E3E6C2}
+.vg{display:block;border-radius:50%;background:#FFFAF0}
+.hero img.stamp{border-radius:50%}
+.inset img.vg,img.vg{width:40px;height:40px;max-width:40px;flex:none;background:#FFFAF0}
