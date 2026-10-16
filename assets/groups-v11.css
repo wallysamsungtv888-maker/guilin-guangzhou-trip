@@ -9,7 +9,7 @@
 #g-hk:checked~.groupbar .gb-hk{background:#B33F00;color:#fff;border-color:#B33F00}
 #g-gz:checked~.groupbar .gb-gz::after,#g-hk:checked~.groupbar .gb-hk::after{content:"✓ 而家顯示";font-size:.75em;margin-left:.3em}
 #g-gz:focus-visible~.groupbar .gb-gz,#g-hk:focus-visible~.groupbar .gb-hk{outline:3px solid #2E241C;outline-offset:3px}
-@media screen{#g-gz:checked~main .g-hk-only,#g-hk:checked~main .g-gz-only{display:none}
+@media screen{#g-gz:checked~* .g-hk-only,#g-hk:checked~* .g-gz-only{display:none}
 }
 .grp,.both{font-style:normal;font-size:.72rem;font-weight:700;border-radius:3px;padding:0 .45em;margin:0 .4em;white-space:nowrap;vertical-align:.1em}
 .grp.gz{background:#1D4E89;color:#fff}.grp.hk{background:#B33F00;color:#fff}
@@ -25,3 +25,5 @@
 .alert,.hk-alert{background-color:#FFE14D}
 /* v12 */
 .map-cap{font-size:.9rem;color:#2E241C;margin-top:.4rem;background-color:#FFF8EC}
+/* v15：郵戳有三個地名，手機放大少少令字睇得清 */
+@media (max-width:760px){.hero img.stamp{width:108px}}
