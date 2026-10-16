@@ -90,7 +90,7 @@ footer{padding:2rem 6vw;font-size:.85rem;color:var(--stone);border-top:1px solid
 .hotels ul{list-style:none;margin:0;padding:0}
 .hotels li{display:grid;grid-template-columns:1.6rem 4.6rem 1fr;align-items:center;min-height:44px;border-bottom:1px solid #D8C9AE;font-size:.95rem}
 .hotels b{font-family:var(--num)}
-.bed{display:inline-block;width:20px;height:14px;vertical-align:-2px;background:no-repeat center/contain url("bed-v7.png?v=7")}
+.bed{display:inline-block;width:20px;height:14px;vertical-align:-2px;background:no-repeat center/contain url("bed-v9.png?v=9")}
 .legend .sym .bed{margin:0 .3em}
 @media (max-width:760px){.hotels h3{margin-top:1.5rem}}
 .routemap figure{grid-row:2/4;margin:0}.routemap .legend{align-self:start}
