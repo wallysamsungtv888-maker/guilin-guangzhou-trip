@@ -1,0 +1,27 @@
+/* v11 兩團切換：純 CSS（radio + :checked），唔使 JS */
+.gsw{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.groupbar{position:sticky;top:0;z-index:20;background:#FFF8EC;border-bottom:3px solid #2E241C;padding:.6rem 6vw;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.2rem;color-scheme:only light}
+.gb-title{margin:0;font-family:var(--serif);font-weight:600}
+.gb-btns{display:flex;gap:.5rem;flex-wrap:wrap}
+.gb{display:inline-flex;align-items:center;gap:.4em;min-height:44px;padding:.3rem 1rem;border:2px solid #2E241C;border-radius:999px;cursor:pointer;font-weight:700;background:#FFFAF0;color:#2E241C}
+.gb-note{margin:0;font-size:.82rem;color:#5E554B;flex-basis:100%}
+#g-gz:checked~.groupbar .gb-gz{background:#1D4E89;color:#fff;border-color:#1D4E89}
+#g-hk:checked~.groupbar .gb-hk{background:#B33F00;color:#fff;border-color:#B33F00}
+#g-gz:checked~.groupbar .gb-gz::after,#g-hk:checked~.groupbar .gb-hk::after{content:"✓ 而家顯示";font-size:.75em;margin-left:.3em}
+#g-gz:focus-visible~.groupbar .gb-gz,#g-hk:focus-visible~.groupbar .gb-hk{outline:3px solid #2E241C;outline-offset:3px}
+@media screen{#g-gz:checked~main .g-hk-only,#g-hk:checked~main .g-gz-only{display:none}
+}
+.grp,.both{font-style:normal;font-size:.72rem;font-weight:700;border-radius:3px;padding:0 .45em;margin:0 .4em;white-space:nowrap;vertical-align:.1em}
+.grp.gz{background:#1D4E89;color:#fff}.grp.hk{background:#B33F00;color:#fff}
+.both{border:1.5px solid #2E241C;color:#2E241C}
+.sw.dashdot{background:repeating-linear-gradient(90deg,var(--c) 0 10px,transparent 10px 14px,var(--c) 14px 17px,transparent 17px 21px)}
+.map-grp{font-size:.9rem;margin:.5rem 0 0}
+.hk-alert{background:#FFE14D}
+.hk-end{font-size:.95rem;margin-top:1rem;border-left:4px solid #B33F00;padding-left:.8rem}
+@media print{.groupbar{position:static;border:0;padding:0 0 .5rem}.gb-btns{display:none}.gb-note::after{content:"（列印版：兩團都印晒，有團別標籤）"}.map-grp{display:none}}
+/* v11 防 Chrome forced dark：日程卡都畀實色底（v10 漏咗） */
+.chapter,.timeline,.day,.day>div,.slots,.slots li,.hk-end,.map-grp{background-color:#FFF8EC}
+.chapter.gz,.chapter.gz .timeline,.chapter.gz .day,.chapter.gz .day>div,.chapter.gz .slots,.chapter.gz .slots li{background-color:#FDEBF1}
+.alert,.hk-alert{background-color:#FFE14D}
+/* v12 */
+.map-cap{font-size:.9rem;color:#2E241C;margin-top:.4rem;background-color:#FFF8EC}
