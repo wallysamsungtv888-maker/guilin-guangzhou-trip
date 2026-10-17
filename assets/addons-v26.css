@@ -1,0 +1,30 @@
+/* 交通方法小標題：同「每晚住邊度」（.hotels h3）一樣嘅樣式 */
+.routemap .jt-h{font-size:1.15rem;margin:1.2rem 0 .4rem}
+@media (max-width:760px){.routemap .jt-h{margin-top:1.5rem}}
+/* 《印象劉三姐》壯族山歌同繡球舞：點陣圖分層＋CSS（sprite 用 steps()，其餘只用 transform / opacity） */
+.anim-sing .anim-stage{background:#2a2f8f}
+.anim-stage .sing-beams{opacity:.8;animation:singBeam 5.5s ease-in-out infinite alternate}
+.anim-stage .sing-sprite{position:absolute;left:12.5%;top:27%;width:75%;height:70%;overflow:hidden;animation:singBob 1.2s ease-in-out infinite alternate}
+.anim-stage .sing-y{position:absolute;left:0;top:0;width:100%;height:300%;animation:singRow 2.4s steps(3) infinite;will-change:transform}
+.anim-stage .sing-y img{position:absolute;left:0;top:0;width:400%;height:100%;max-width:none;animation:singCol .8s steps(4) infinite}
+@keyframes singRow{from{transform:translateY(0)}to{transform:translateY(-100%)}}
+@keyframes singCol{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@keyframes singBob{from{transform:translateY(0)}to{transform:translateY(-.8%)}}
+@keyframes singBeam{0%{opacity:.55}50%{opacity:1}100%{opacity:.7}}
+.sing-ctl{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;margin-top:.6rem;color-scheme:only light;background-color:#FFF8EC}
+.sing-ctl[hidden]{display:none}
+.sing-ctl button{min-height:44px;padding:.3rem 1rem;border:2px solid #2E241C;border-radius:999px;background:#FFFAF0;color:#2E241C;font:inherit;font-weight:700;cursor:pointer}
+.sing-ctl .sing-play{background:#1D4E89;border-color:#1D4E89;color:#fff}
+.sing-ctl button:focus-visible{outline:3px solid #2E241C;outline-offset:3px}
+.sing-ctl .sing-note{font-size:.85rem;color:#5E554B}
+@media (prefers-reduced-motion:reduce){.anim-stage .sing-y{will-change:auto}}
+@media print{.sing-ctl{display:none}}
+/* 版面次序：行程 → 景點放大圖 → 路線圖（交通方法）→ 每晚住邊度 */
+.stay{padding-top:0;background-color:#FFF8EC}.stay .hotels{max-width:40em}.stay .hotels h3{margin-top:0}
+@media screen and (min-width:761px){
+ .routemap figure{display:contents}
+ .routemap .map-scroll{grid-column:1;grid-row:2/6}
+ .routemap .jt-h{grid-column:2;grid-row:2}
+ .routemap .map-grp{grid-column:2;grid-row:3}
+ .routemap .legend{grid-column:2;grid-row:4}
+}
