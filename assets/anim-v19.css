@@ -1,0 +1,57 @@
+/* v19 動畫插圖（原創插圖，自行繪製，非真實相片）
+   - 點陣圖分層（WebP），只用 transform / opacity 做動畫
+   - prefers-reduced-motion: reduce 全部停，顯示靜止構圖
+   - color-scheme: only light，防 Chrome 自動深色 */
+.anim{color-scheme:only light;background-color:#FFF8EC;margin:1.4rem 0 .6rem}
+.day .anim{max-width:760px;margin:1.4rem 0 .6rem}
+.anim-stage{position:relative;aspect-ratio:2/1;overflow:hidden;border:2px solid #2E241C;border-radius:8px;isolation:isolate;contain:paint;color-scheme:only light;forced-color-adjust:none}
+.anim-liu .anim-stage{background:#22489e}
+.anim-raft .anim-stage{background:#a6def6}
+.anim-tower .anim-stage{background:#4a4fb2}
+.anim-stage img,.anim-stage .lyr{position:absolute;left:0;top:0;width:100%;height:100%;max-width:none;display:block;pointer-events:none}
+.anim-stage img.wide{width:200%}
+.anim figcaption{font-size:.88rem;color:#2E241C;margin-top:.45rem;line-height:1.7}
+.anim figcaption b{font-family:var(--serif);font-size:1rem}
+.anim .orig{display:inline-block;font-size:.75rem;font-weight:700;border:1.5px solid #2E241C;border-radius:3px;padding:0 .4em;margin:0 .2em;white-space:nowrap;background:#FFF8EC;color:#2E241C}
+
+/* 1. 印象劉三姐：光柱流轉、水面閃光、漁火閃 */
+.liu-beams-a{transform-origin:33% 67.8%;opacity:.9;transform:rotate(-2deg);animation:liuSwayA 7s ease-in-out infinite alternate}
+.liu-beams-b{transform-origin:67% 67.8%;opacity:.75;transform:rotate(3deg);animation:liuSwayB 9s ease-in-out infinite alternate}
+.anim-stage .liu-shimmer{top:62%;height:38%;opacity:.85;animation:slideHalf 26s linear infinite,glow 3.2s ease-in-out infinite alternate}
+.liu-boats{animation:drift 16s ease-in-out infinite alternate;will-change:transform}
+.liu-fire{opacity:.95;animation:flicker 1.7s ease-in-out infinite}
+@keyframes liuSwayA{0%{transform:rotate(-7deg);opacity:.45}50%{opacity:1}100%{transform:rotate(6deg);opacity:.6}}
+@keyframes liuSwayB{0%{transform:rotate(8deg);opacity:1}50%{opacity:.35}100%{transform:rotate(-6deg);opacity:.9}}
+@keyframes slideHalf{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes glow{from{opacity:.55}to{opacity:1}}
+@keyframes drift{from{transform:translateX(-2.5%)}to{transform:translateX(2.5%)}}
+@keyframes flicker{0%,100%{opacity:1}20%{opacity:.7}35%{opacity:.95}55%{opacity:.6}75%{opacity:.9}}
+
+/* 2. 遇龍河竹筏：竹筏飄、水波、霧氣 */
+.anim-stage .raft-ripples{top:60%;height:40%;opacity:.8;animation:slideHalf 30s linear infinite}
+.anim-stage .raft-path{left:2%;top:52%;width:46%;height:auto;transform:translateX(55%);animation:raftGo 38s linear -15s infinite;will-change:transform,opacity}
+.anim-stage .raft-path img{position:static;width:100%;height:auto;transform-origin:50% 60%;animation:bob 4.5s ease-in-out infinite alternate}
+.anim-stage .raft-mist{opacity:.9;animation:slideHalf 70s linear infinite}
+.anim-stage .raft-mist.m2{opacity:.5;transform:translateX(-25%);animation:slideHalf 110s linear infinite reverse,glow 9s ease-in-out infinite alternate}
+@keyframes raftGo{0%{transform:translateX(-30%);opacity:0}8%{opacity:1}92%{opacity:1}100%{transform:translateX(120%);opacity:0}}
+@keyframes bob{from{transform:translateY(0) rotate(-.6deg)}to{transform:translateY(-2.5%) rotate(.6deg)}}
+
+/* 3. 廣州塔閃燈（只係廣州繼續團） */
+.tower-a{opacity:0;animation:towerA 8s ease-in-out infinite}
+.tower-b{opacity:1;animation:towerB 8s ease-in-out infinite}
+.tower-sp{opacity:1;animation:twinkle 1.3s steps(2,jump-none) infinite}
+.anim-stage .tower-glints{top:74%;height:26%;opacity:.85;animation:slideHalf 24s linear infinite,glow 2.4s ease-in-out infinite alternate}
+.anim-stage .tower-boat{left:0;top:71%;width:23%;height:auto;transform:translateX(60%);animation:cruise 48s linear -18s infinite}
+@keyframes towerA{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
+@keyframes towerB{0%,38%{opacity:1}50%,88%{opacity:0}100%{opacity:1}}
+@keyframes twinkle{0%{opacity:1}100%{opacity:.25}}
+@keyframes cruise{0%{transform:translateX(-110%)}100%{transform:translateX(440%)}}
+/* 回港團：廣州塔一定唔顯示（雙重保險，唔止靠 .g-gz-only） */
+#g-hk:checked~main .anim-tower,#g-hk:checked~* .anim-tower{display:none!important}
+
+/* 減少動態：全部停喺靜止構圖 */
+@media (prefers-reduced-motion:reduce){
+ .anim-stage *,.anim-stage *::before,.anim-stage *::after{animation:none!important;transition:none!important}
+ .anim-stage .raft-path,.anim-stage .liu-boats{will-change:auto}
+}
+@media print{.anim{display:none}}
