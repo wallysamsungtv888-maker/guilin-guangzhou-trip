@@ -18,7 +18,7 @@
 .map-grp{font-size:.9rem;margin:.5rem 0 0}
 .hk-alert{background:#FFE14D}
 .hk-end{font-size:.95rem;margin-top:1rem;border-left:4px solid #B33F00;padding-left:.8rem}
-@media print{.groupbar{position:static;border:0;padding:0 0 .5rem}.gb-btns{display:none}.gb-note::after{content:"（列印版：兩團都印晒，有團別標籤）"}.map-grp{display:none}}
+@media print{.groupbar{position:static;border:0;padding:0 0 .5rem}.gb-btns{display:none}.map-grp{display:none}}
 /* v11 防 Chrome forced dark：日程卡都畀實色底（v10 漏咗） */
 .chapter,.timeline,.day,.day>div,.slots,.slots li,.hk-end,.map-grp{background-color:#FFF8EC}
 .chapter.gz,.chapter.gz .timeline,.chapter.gz .day,.chapter.gz .day>div,.chapter.gz .slots,.chapter.gz .slots li{background-color:#FDEBF1}
