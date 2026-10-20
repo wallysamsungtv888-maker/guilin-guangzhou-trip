@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/groups-v22.css?v=22">
 <link rel="stylesheet" href="assets/anim-v19.css?v=19">
 <link rel="stylesheet" href="assets/addons-v26.css?v=26">
-<link rel="stylesheet" href="assets/weather-v32.css?v=32">
+<link rel="stylesheet" href="assets/weather-v34.css?v=34">
 <script src="assets/sing-v26.js?v=26" defer></script>
 </head>
 <body>
@@ -45,25 +45,31 @@
       <g id="wx-overcast"><circle cx="31" cy="15" r="6" fill="#FFD08A"/><path d="M14 36h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 36z" fill="#DDE3E6" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/></g>
       <g id="wx-cool"><use href="#wx-cloudy"/><g stroke="#0A6670" stroke-width="2" stroke-linecap="round"><path d="M40 33v12M35 39h10M36.5 35.5l7 7M43.5 35.5l-7 7"/></g></g>
       <g id="wx-thunder"><path d="M14 32h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 32z" fill="#DDE3E6" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/><path d="M25 30l-5 9h5l-3 8 9-11h-5l3-6z" fill="#FFB347" stroke="#B4492A" stroke-width="1.5" stroke-linejoin="round"/></g>
+      <g id="wx-sun"><g stroke="#FFB347" stroke-width="3" stroke-linecap="round"><path d="M24 4v5M24 39v5M4 24h5M39 24h5M9.9 9.9l3.5 3.5M34.6 34.6l3.5 3.5M38.1 9.9l-3.5 3.5M13.4 34.6l-3.5 3.5"/></g><circle cx="24" cy="24" r="9.5" fill="#FFB347" stroke="#D9822B" stroke-width="2"/></g>
+      <g id="wx-fog"><path d="M14 27h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 27z" fill="#DDE3E6" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/><g stroke="#8A979D" stroke-width="2.5" stroke-linecap="round"><path d="M9 33h26M15 38.5h26M11 44h22"/></g></g>
+      <g id="wx-drizzle"><path d="M14 30h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 30z" fill="#DDE3E6" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/><g fill="#1D6FB8"><circle cx="17" cy="36" r="1.6"/><circle cx="25" cy="36" r="1.6"/><circle cx="33" cy="36" r="1.6"/><circle cx="21" cy="42" r="1.6"/><circle cx="29" cy="42" r="1.6"/></g></g>
       <g id="wx-rain"><path d="M14 30h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 30z" fill="#DDE3E6" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/><g stroke="#1D6FB8" stroke-width="2.5" stroke-linecap="round"><path d="M16 35l-2 5M24 35l-2 5M32 35l-2 5M20 42l-1.5 3M28 42l-1.5 3"/></g></g>
+      <g id="wx-heavyrain"><path d="M14 28h22a8 8 0 0 0 0-16 11 11 0 0 0-21-1A8.5 8.5 0 0 0 14 28z" fill="#B9C4CA" stroke="#5E554B" stroke-width="2.5" stroke-linejoin="round"/><g stroke="#1D6FB8" stroke-width="2.8" stroke-linecap="round"><path d="M13 33l-3 7M20 33l-3 7M27 33l-3 7M34 33l-3 7M16.5 41l-2 4.5M23.5 41l-2 4.5M30.5 41l-2 4.5"/></g></g>
     </defs>
   </svg>
   <div class="wx-card">
-    <div class="wx-head"><h2 id="h-wx">天氣預報</h2><p class="wx-src"><b>20/10 預報（中國天氣網）</b></p></div>
+<!-- wx:auto:start -->
+    <div class="wx-head"><h2 id="h-wx">天氣預報</h2><p class="wx-src"><b>20/10 預報</b></p></div>
     <h3 class="wx-sub">桂林・龍脊・陽朔<em class="both">兩團</em></h3>
     <ul class="wx-grid">
-      <li class="wx-day"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-cloudy"/></svg><span class="wx-d">22/10</span><span class="wx-p">桂林</span><span class="wx-t">19–27<small>°C</small></span><span class="wx-c">多雲</span><span class="wx-tip">早晚涼，帶件薄外套</span></li>
-      <li class="wx-day cool"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-cool"/></svg><span class="wx-d">23/10</span><span class="wx-p">龍脊（山上）</span><span class="wx-t">14–25<small>°C</small></span><span class="wx-c">多雲，較涼</span><span class="wx-tip">山上凍啲，著薄外套</span></li>
-      <li class="wx-day"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-cloudy"/></svg><span class="wx-d">24/10</span><span class="wx-p">陽朔</span><span class="wx-t">17–29<small>°C</small></span><span class="wx-c">多雲</span><span class="wx-tip">竹筏曬，帶帽同防曬</span></li>
-      <li class="wx-day"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-cloudy"/></svg><span class="wx-d">25/10</span><span class="wx-p">陽朔・桂林</span><span class="wx-t">19–31<small>°C</small></span><span class="wx-c">多雲</span><span class="wx-tip">下晝熱，記得飲水防曬</span></li>
+      <li class="wx-day" data-wx-date="2026-10-22" data-wx-loc="guilin"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-cloudy"/></svg><span class="wx-d">22/10</span><span class="wx-p">桂林</span><span class="wx-t">18–29<small>°C</small></span><span class="wx-c">多雲</span><span class="wx-tip">早晚涼，帶件薄外套</span></li>
+      <li class="wx-day cool" data-wx-date="2026-10-23" data-wx-loc="longji" data-wx-mtn="1"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-overcast"/></svg><span class="wx-d">23/10</span><span class="wx-p">龍脊（山上）</span><span class="wx-t">13–25<small>°C</small></span><span class="wx-c">陰，較涼</span><span class="wx-tip">山上早晚凍，帶薄外套</span></li>
+      <li class="wx-day" data-wx-date="2026-10-24" data-wx-loc="yangshuo"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-overcast"/></svg><span class="wx-d">24/10</span><span class="wx-p">陽朔</span><span class="wx-t">18–30<small>°C</small></span><span class="wx-c">陰</span><span class="wx-tip">下晝熱，記得飲水防曬</span></li>
+      <li class="wx-day" data-wx-date="2026-10-25" data-wx-loc="yangshuo,guilin"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-overcast"/></svg><span class="wx-d">25/10</span><span class="wx-p">陽朔・桂林</span><span class="wx-t">17–30<small>°C</small></span><span class="wx-c">陰</span><span class="wx-tip">下晝熱，記得飲水防曬</span></li>
     </ul>
     <h3 class="wx-sub g-gz-only">廣州<em class="grp gz">只係廣州繼續團</em></h3>
     <ul class="wx-grid g-gz-only">
-      <li class="wx-day gz"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-rain"/></svg><span class="wx-d">25/10</span><span class="wx-p">廣州</span><span class="wx-t">22–30<small>°C</small></span><span class="wx-c">多雲轉小雨</span><span class="wx-tip">夜晚可能落雨，帶遮</span></li>
-      <li class="wx-day gz"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-rain"/></svg><span class="wx-d">26/10</span><span class="wx-p">廣州</span><span class="wx-t">21–29<small>°C</small></span><span class="wx-c">小雨轉多雲</span><span class="wx-tip">朝早落雨，帶遮</span></li>
-      <li class="wx-day gz"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-rain"/></svg><span class="wx-d">27/10</span><span class="wx-p">廣州</span><span class="wx-t">22–31<small>°C</small></span><span class="wx-c">多雲轉雨</span><span class="wx-tip">下晝會落雨，帶遮上巴士</span></li>
+      <li class="wx-day gz" data-wx-date="2026-10-25" data-wx-loc="guangzhou"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-overcast"/></svg><span class="wx-d">25/10</span><span class="wx-p">廣州</span><span class="wx-t">23–33<small>°C</small></span><span class="wx-c">陰</span><span class="wx-tip">好熱，多飲水、做足防曬</span></li>
+      <li class="wx-day gz" data-wx-date="2026-10-26" data-wx-loc="guangzhou"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-drizzle"/></svg><span class="wx-d">26/10</span><span class="wx-p">廣州</span><span class="wx-t">25–33<small>°C</small></span><span class="wx-c">毛毛雨<span class="wx-pp">降雨概率 21%</span></span><span class="wx-tip">好熱，多飲水、做足防曬</span></li>
+      <li class="wx-day gz" data-wx-date="2026-10-27" data-wx-loc="guangzhou"><svg class="wx-ic" viewBox="0 0 48 48" aria-hidden="true"><use href="#wx-drizzle"/></svg><span class="wx-d">27/10</span><span class="wx-p">廣州</span><span class="wx-t">24–33<small>°C</small></span><span class="wx-c">毛毛雨</span><span class="wx-tip">好熱，多飲水、做足防曬</span></li>
     </ul>
-    <p class="wx-foot">資料：中國天氣網 weather.com.cn，20/10 11:40（香港時間）查閱。</p>
+    <p class="wx-foot">資料：<a href="https://open-meteo.com/" rel="noopener">Open-Meteo</a>，最後更新 <span class="wx-upd">20/10 15:42</span>（香港時間）</p>
+<!-- wx:auto:end -->
   </div>
 </section>
 
@@ -92,7 +98,7 @@
       <header class="dayhead"><picture><source type="image/webp" srcset="assets/longji-v9.webp?v=9"><img src="assets/longji-v9.png?v=9" alt="插畫：龍脊梯田金黃稻田同山上壯寨" width="1600" height="700"></picture><div class="dh-text"><p class="date">23/10<small>星期五・第 2 日</small></p><h3>上龍脊，住喺梯田上面</h3></div></header>
       <div>
       <ul class="slots">
-        <li><span class="t">全日</span>龍脊梯田、西山韶樂、千層天梯<span class="note">20/10 預報（中國天氣網）：多雲，唔再報雨；龍脊山上較涼（約 14–25°C），帶件薄外套。龍脊通票成人約 ¥80（人民幣）：<span class="verify">以現場為準</span></span></li>
+        <li><span class="t">全日</span>龍脊梯田、西山韶樂、千層天梯<span class="note"><span class="wx-note" data-wx-date="2026-10-23" data-wx-loc="longji" data-wx-mtn="1" data-wx-place="龍脊山上">天氣（龍脊山上）：陰，13–25°C；山上早晚凍，帶薄外套。</span>龍脊通票成人約 ¥80（人民幣）：<span class="verify">以現場為準</span></span></li>
         <li><span class="t">午／晚餐</span><span class="tag food">食</span>鄉巴佬飯店；野望味道梯田全景餐廳</li>
         <li><span class="t">住宿</span><span class="tag hotel">客棧</span>龍景苑客棧（三號金佛頂觀景台店）<span class="note"><span class="tag bar">民謠</span>山上冇民謠酒吧，今晚早啲瞓</span></li>
       </ul></div>
@@ -101,7 +107,7 @@
       <header class="dayhead"><picture><source type="image/webp" srcset="assets/moonhill-v9.webp?v=9"><img src="assets/moonhill-v9.png?v=9" alt="插畫：月亮山拱洞同遇龍河竹筏" width="1600" height="700"></picture><div class="dh-text"><p class="date">24/10<small>星期六・第 3 日</small></p><h3>月亮山下，《印象劉三姐》之夜</h3></div></header>
       <div>
       <ul class="slots">
-        <li><span class="t">全日</span><span class="tag train">包團</span><strong>私人訂製包團</strong>：9 座商務車，金牌司機兼嚮導<span class="note">20/10 預報（中國天氣網）：多雲</span></li>
+        <li><span class="t">全日</span><span class="tag train">包團</span><strong>私人訂製包團</strong>：9 座商務車，金牌司機兼嚮導<span class="note"><span class="wx-note" data-wx-date="2026-10-24" data-wx-loc="yangshuo" data-wx-place="陽朔">天氣（陽朔）：陰，18–30°C；下晝熱，記得飲水防曬。</span></span></li>
         <li><span class="t">接</span>龍脊接人，落山去陽朔</li>
         <li><span class="t">遊</span>遇龍河竹筏（水厄底）</li>
         <li><span class="t">車遊</span>十里畫廊，沿途喺月亮山、大榕樹停車影相</li>
@@ -333,5 +339,87 @@
 </section>
 </main>
 
+<script type="application/json" id="wx-cfg">{"locs":{"guilin":[25.274,110.296],"longji":[25.8093,110.1524],"yangshuo":[24.778,110.496],"guangzhou":[23.09,113.235]}}</script>
+<script>
+/* 天氣卡：開頁時向 Open-Meteo 攞最新預報；攞唔到（或超時）就保留頁面上嘅數值，唔顯示錯誤 */
+(function(){
+  var cfgEl=document.getElementById('wx-cfg');
+  if(!cfgEl||!window.fetch||!window.JSON)return;
+  var locs;try{locs=JSON.parse(cfgEl.textContent).locs;}catch(e){return;}
+  var W={0:['晴','sun'],1:['大致天晴','sun'],2:['多雲','cloudy'],3:['陰','overcast'],45:['有霧','fog'],48:['有霧','fog'],51:['毛毛雨','drizzle'],53:['毛毛雨','drizzle'],55:['毛毛雨','drizzle'],56:['毛毛雨','drizzle'],57:['毛毛雨','drizzle'],61:['小雨','rain'],63:['中雨','rain'],65:['大雨','heavyrain'],66:['小雨','rain'],67:['大雨','heavyrain'],71:['落雪','overcast'],73:['落雪','overcast'],75:['落雪','overcast'],77:['落雪','overcast'],80:['陣雨','rain'],81:['陣雨','rain'],82:['大陣雨','heavyrain'],85:['落雪','overcast'],86:['落雪','overcast'],95:['雷暴','thunder'],96:['雷暴','thunder'],99:['雷暴','thunder']};
+  function wmo(c){return W[c]||['多雲','cloudy'];}
+  function rainTip(c,p){
+    if(c>=95)return '可能有雷暴，帶遮，避開空曠位';
+    if(p>=70||c===65||c===67||c===82)return '好大機會落雨，帶遮';
+    if(p>=50)return '可能落雨，帶遮';
+    if(c>=51&&p>=30)return '間中有雨，帶把縮骨遮';
+    if(c===45||c===48)return '有霧，睇景未必清';
+    return '';
+  }
+  function tempTip(lo,hi,c,m){
+    if(m&&lo<=16)return '山上早晚凍，帶薄外套';
+    if(hi>=33)return '好熱，多飲水、做足防曬';
+    if(hi>=30)return '下晝熱，記得飲水防曬';
+    if(lo<=16||(lo<=18&&hi-lo>=9))return '早晚涼，帶件薄外套';
+    if(c<=2)return '日頭曬，帶帽同防曬';
+    return '天氣舒服，帶定水';
+  }
+  function tip(lo,hi,c,p,m){
+    var r=rainTip(c,p),t=tempTip(lo,hi,c,m);
+    if(r&&(t==='日頭曬，帶帽同防曬'||t==='天氣舒服，帶定水'))t='';
+    return [r,t].filter(Boolean).join('；');
+  }
+  function pad(n){return (n<10?'0':'')+n;}
+  var hk=new Date(Date.now()+8*3600e3),today=hk.toISOString().slice(0,10);
+  var names=Object.keys(locs),lat=[],lon=[];
+  names.forEach(function(n){lat.push(locs[n][0]);lon.push(locs[n][1]);});
+  var url='https://api.open-meteo.com/v1/forecast?latitude='+lat.join(',')+'&longitude='+lon.join(',')+'&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max&timezone=Asia%2FShanghai&forecast_days=16';
+  var ctl=window.AbortController?new AbortController():null,done=false;
+  var timer=setTimeout(function(){done=true;if(ctl)ctl.abort();},5000);
+  fetch(url,ctl?{signal:ctl.signal}:{}).then(function(r){if(!r.ok)throw 0;return r.json();}).then(function(data){
+    clearTimeout(timer);if(done)return;
+    if(!Array.isArray(data))data=[data];
+    var daily={};names.forEach(function(n,i){daily[n]=data[i]&&data[i].daily;});
+    function day(el){
+      var date=el.getAttribute('data-wx-date'),ls=(el.getAttribute('data-wx-loc')||'').split(',');
+      if(!date||date<today)return null;
+      var lo=[],hi=[],cs=[],ps=[];
+      for(var k=0;k<ls.length;k++){
+        var d=daily[ls[k]];if(!d||!d.time)return null;
+        var i=d.time.indexOf(date);if(i<0)return null;
+        var a=d.temperature_2m_min[i],b=d.temperature_2m_max[i],c=d.weather_code[i];
+        if(a==null||b==null||c==null)return null;
+        lo.push(a);hi.push(b);cs.push(+c);ps.push(+(d.precipitation_probability_max[i]||0));
+      }
+      var s={lo:Math.round(Math.min.apply(0,lo)),hi:Math.round(Math.max.apply(0,hi)),code:Math.max.apply(0,cs),prob:Math.max.apply(0,ps)};
+      var m=el.getAttribute('data-wx-mtn')==='1',w=wmo(s.code);
+      s.label=w[0];s.icon=w[1];
+      if(m&&s.lo<=16&&(s.icon==='sun'||s.icon==='cloudy'))s.icon='cool';
+      s.cond=w[0]+(m&&s.lo<=16?'，較涼':'');
+      s.tip=tip(s.lo,s.hi,s.code,s.prob,m);
+      return s;
+    }
+    var n=0;
+    [].forEach.call(document.querySelectorAll('.wx-day[data-wx-date]'),function(li){
+      var s=day(li);if(!s)return;
+      var u=li.querySelector('.wx-ic use'),t=li.querySelector('.wx-t'),c=li.querySelector('.wx-c'),tp=li.querySelector('.wx-tip');
+      if(!u||!t||!c||!tp)return;
+      u.setAttribute('href','#wx-'+s.icon);
+      t.firstChild.nodeValue=s.lo+'–'+s.hi;
+      c.textContent=s.cond;
+      if(s.prob>=20){var pp=document.createElement('span');pp.className='wx-pp';pp.textContent='降雨概率 '+s.prob+'%';c.appendChild(pp);}
+      tp.textContent=s.tip;n++;
+    });
+    [].forEach.call(document.querySelectorAll('.wx-note[data-wx-date]'),function(el){
+      var s=day(el);if(!s)return;
+      el.textContent='天氣（'+el.getAttribute('data-wx-place')+'）：'+s.label+'，'+s.lo+'–'+s.hi+'°C；'+s.tip+'。';
+    });
+    if(!n)return;
+    var hd=document.querySelector('.wx-src b'),up=document.querySelector('.wx-upd'),dm=pad(hk.getUTCDate())+'/'+pad(hk.getUTCMonth()+1);
+    if(hd)hd.textContent=dm+' 預報';
+    if(up)up.textContent=dm+' '+pad(hk.getUTCHours())+':'+pad(hk.getUTCMinutes());
+  }).catch(function(){clearTimeout(timer);});
+})();
+</script>
 </body>
 </html>

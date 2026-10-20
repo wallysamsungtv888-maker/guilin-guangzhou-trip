@@ -1,0 +1,36 @@
+/* v34：行程前面嘅天氣卡（自動更新） */
+.wx{padding:2rem 6vw 1rem;background:#FFF8EC}
+.wx-card{max-width:72rem;margin:0 auto;background:#fff;border:2px solid var(--ink);border-radius:10px;box-shadow:8px 8px 0 var(--sun);padding:1.2rem 1.4rem 1rem}
+.wx-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.2rem 1rem;margin-bottom:.8rem}
+.wx-head h2{font-size:clamp(1.5rem,3.6vw,2.1rem);margin:0}
+.wx-src{margin:0;font-size:.82rem;color:var(--stone)}
+.wx-src b{color:var(--terra);font-weight:700}
+.wx-sub{margin:1rem 0 .5rem;font-family:var(--serif);font-size:1.05rem;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:.3rem}
+.wx-sub:first-of-type{margin-top:0}
+.wx-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.7rem}
+.wx-day{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"ic d" "ic p" "t t" "c c" "tip tip";column-gap:.6rem;align-items:center;background:#FFF4DC;border:1.5px solid #E8CFA6;border-radius:8px;padding:.7rem .8rem;line-height:1.45;min-width:0}
+.wx-day.gz{background:#FDEBF1;border-color:#F3B9CC}
+.wx-day.cool{background:#E6F3F4;border-color:#A9D3D6}
+.wx-ic{grid-area:ic;width:44px;height:44px;flex:none}
+.wx-d{grid-area:d;font-family:var(--num);font-size:1.35rem;color:var(--terra);font-weight:700;line-height:1.1}
+.wx-day.gz .wx-d{color:var(--pink)}.wx-day.cool .wx-d{color:var(--jade)}
+.wx-p{grid-area:p;font-size:.85rem;color:var(--stone)}
+.wx-t{grid-area:t;margin-top:.45rem;font-family:var(--num);font-variant-numeric:tabular-nums;font-size:1.15rem;font-weight:700;white-space:nowrap}
+.wx-t small{font-size:.75em;color:var(--stone);font-weight:400}
+.wx-c{grid-area:c;font-weight:700;font-size:.95rem}
+.wx-tip{grid-area:tip;margin-top:.3rem;font-size:.85rem;color:var(--ink);border-top:1px dashed #D9BF94;padding-top:.3rem}
+.wx-day.gz .wx-tip{border-color:#F3B9CC}.wx-day.cool .wx-tip{border-color:#A9D3D6}
+.wx-foot{margin:.8rem 0 0;font-size:.8rem;color:var(--stone)}
+.wx-foot a{color:inherit}
+.wx-pp{display:block;font-weight:400;font-size:.8rem;color:#1D6FB8}
+.wx-day.gz .wx-pp{color:#1D5FA0}
+@media (max-width:760px){
+ .wx{padding:1.4rem 4vw .6rem}
+ .wx-card{padding:1rem .9rem .9rem;box-shadow:5px 5px 0 var(--sun)}
+ .wx-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.55rem}
+ .wx-day{padding:.6rem .65rem;column-gap:.45rem}
+ .wx-ic{width:36px;height:36px}
+ .wx-d{font-size:1.15rem}
+ .wx-t{font-size:1.05rem}
+}
+@media print{.wx-card{box-shadow:none}}
